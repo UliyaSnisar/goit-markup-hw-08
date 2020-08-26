@@ -1,0 +1,60 @@
+/* О нас */
+
+.abot-us{
+    padding-top: 94px;
+}
+
+.abut-us-title{
+    margin: 0;
+}
+
+.description-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 120px;
+
+    background: $secondary-background-color;
+    border-radius: 4px;
+    margin-right: 0;
+}
+
+.description-list-item-svg{
+    width: 70px;
+    height: 70px;
+}
+
+.description-subtitle{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $title-color;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.description-list-item{
+    margin: 0;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+
+.text{
+    color: $main-color;
+}

@@ -1,0 +1,76 @@
+/* постоянные клиенты */
+
+.customers{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers-list{
+    display: flex;
+    justify-content: center;
+}
+
+.customers-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.customer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 90px;
+
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        border: 1px solid $acent-color;
+    }
+
+    &:hover .customer-svg,
+    &:focus .customer-svg{
+        fill: $acent-color;
+    }
+}
+
+.customer-svg{
+    fill: #AFB1B8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-1{
+    width: 44px;
+    height: 49px;
+}
+
+.logo-2{
+    width: 40px;
+    height: 52px;
+}
+
+.logo-3{
+    width: 41px;
+    height: 42.5px;
+}
+
+.logo-4{
+    width: 79.6px;
+    height: 42px;
+}
+
+.logo-5{
+    width: 59px;
+    height: 47px;
+}
+
+.logo-6{
+    width: 88.5px;
+    height: 45.4px;
+}
