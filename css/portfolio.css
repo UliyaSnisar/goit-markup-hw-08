@@ -83,7 +83,7 @@ body {
 }
 
 .subtitle {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -266,6 +266,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    max-width: 768px;
+    margin: 0 auto;
+  }
   .logo {
     margin-right: 0px;
   }
@@ -327,6 +331,10 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   .logo {
     margin-right: 0;
   }

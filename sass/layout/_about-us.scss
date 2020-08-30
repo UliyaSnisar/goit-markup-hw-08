@@ -1,28 +1,23 @@
 /* О нас */
 
 .abot-us{
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.abut-us-title{
+.about-us-title{
     margin: 0;
-}
-
-.description-list{
-    display: flex;
-    justify-content: space-between;
 }
 
 .about-us-svg{
     display: flex;
     justify-content: center;
     align-items: center;
-
     height: 120px;
 
     background: $secondary-background-color;
     border-radius: 4px;
-    margin-right: 0;
+    margin-bottom: 30px;
 }
 
 .description-list-item-svg{
@@ -31,30 +26,70 @@
 }
 
 .description-subtitle{
-    font-weight: 700;
+    font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
     color: $title-color;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-.description-list-item{
+.description-list-item-text{
     margin: 0;
 
     font-weight: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-
-    &:not(:last-child){
-        margin-right: 30px;
-    }
 }
 
 .text{
     color: $main-color;
+}
+
+@media screen and (max-width: 767px){
+
+    .description-list{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    .description-list-item:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    .description-subtitle{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .description-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    .description-list-item{
+        margin: 15px;
+        flex-basis: calc((100% - 60px) / 2)
+    }
+
+    .description-list-item-text{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .description-list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .description-list-item{
+        flex-basis: calc((100% - 120px) / 4);
+    }
 }
