@@ -1155,25 +1155,19 @@ body {
 /* наша команда */
 .team {
   background-color: #F5F4FA;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.team-list {
-  display: flex;
-  justify-content: center;
+.subtitle {
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 
 .team-list-item {
-  width: 270px;
-  height: 422px;
   background-color: #ffffff;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-list-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .team-image {
@@ -1204,7 +1198,7 @@ body {
 .social-list {
   display: flex;
   justify-content: center;
-  max-width: 270px;
+  max-width: 206px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1230,7 +1224,7 @@ body {
 }
 
 .social-link-item:not(:last-child) {
-  margin-right: 22px;
+  margin-right: 10px;
 }
 
 .social-list-item-link-svg {
@@ -1240,27 +1234,73 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .team-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .team-list-item {
+    width: 450px;
+    height: 622px;
+    margin-bottom: 30px;
+  }
+  .team-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .team-list-item {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .subtitle {
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .team-list {
+    display: flex;
+    justify-content: center;
+  }
+  .team-list-item {
+    width: 270px;
+    height: 422px;
+  }
+  .team-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 /* постоянные клиенты */
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.customers-list {
-  display: flex;
-  justify-content: center;
-}
-
-.customers-list-item:not(:last-child) {
-  margin-right: 30px;
+.subtitle {
+  font-size: 28px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .customer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 90px;
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -1282,8 +1322,8 @@ body {
 }
 
 .logo-1 {
-  width: 44px;
-  height: 49px;
+  width: 44.27px;
+  height: 49.23px;
 }
 
 .logo-2 {
@@ -1293,12 +1333,12 @@ body {
 
 .logo-3 {
   width: 41px;
-  height: 42.5px;
+  height: 42.6px;
 }
 
 .logo-4 {
-  width: 79.6px;
-  height: 42px;
+  width: 79.66px;
+  height: 42.02px;
 }
 
 .logo-5 {
@@ -1307,8 +1347,63 @@ body {
 }
 
 .logo-6 {
-  width: 88.5px;
-  height: 45.4px;
+  width: 88.48px;
+  height: 45.44px;
+}
+
+@media screen and (max-width: 767px) {
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .customers-list-item {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .customer {
+    width: 210px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .customers-list-item {
+    margin: 15px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  .customer {
+    width: 226px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .subtitle {
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .customers-list {
+    display: flex;
+    justify-content: center;
+  }
+  .customers-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .customer {
+    width: 170px;
+    height: 90px;
+  }
 }
 
 /* footer */

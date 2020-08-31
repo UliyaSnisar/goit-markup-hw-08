@@ -1,26 +1,20 @@
 /* постоянные клиенты */
 
 .customers{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.customers-list{
-    display: flex;
-    justify-content: center;
-}
-
-.customers-list-item:not(:last-child){
-    margin-right: 30px;
+.subtitle{
+    font-size: 28px;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 
 .customer{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width: 170px;
-    height: 90px;
 
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
@@ -46,8 +40,8 @@
 }
 
 .logo-1{
-    width: 44px;
-    height: 49px;
+    width: 44.27px;
+    height: 49.23px;
 }
 
 .logo-2{
@@ -57,12 +51,12 @@
 
 .logo-3{
     width: 41px;
-    height: 42.5px;
+    height: 42.6px;
 }
 
 .logo-4{
-    width: 79.6px;
-    height: 42px;
+    width: 79.66px;
+    height: 42.02px;
 }
 
 .logo-5{
@@ -71,6 +65,76 @@
 }
 
 .logo-6{
-    width: 88.5px;
-    height: 45.4px;
+    width: 88.48px;
+    height: 45.44px;
 }
+
+@media screen and (max-width: 767px){
+
+    .customers-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    
+    .customers-list-item{
+        margin: 15px;
+        flex-basis: calc((100% - 60px) / 2);
+    }
+
+    .customer{   
+        width: 210px;
+        height: 90px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .customers-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    
+    .customers-list-item{
+        margin: 15px;
+        flex-basis: calc((100% - 90px) / 3);
+    }
+
+    .customer{   
+        width: 226px;
+        height: 90px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .customers{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .subtitle{
+        font-size: 36px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+    .customers-list{
+        display: flex;
+        justify-content: center;
+    }
+
+    .customers-list-item:not(:last-child){
+        margin-right: 30px;
+    }
+
+    .customer{   
+        width: 170px;
+        height: 90px;
+    }
+
+}
+
+
+
+
+
