@@ -687,8 +687,6 @@ body {
 /* HEADER */
 .header {
   position: relative;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .header-container {
@@ -709,11 +707,14 @@ body {
 }
 
 .navigation-list-item-link {
+  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -722,13 +723,14 @@ body {
 }
 
 .link-after-studio::after {
+  position: absolute;
+  bottom: 0;
   display: block;
   content: "";
   width: 47px;
   height: 4px;
   background: #2196F3;
   border-radius: 2px;
-  margin-top: 28px;
 }
 
 .link-after-portfolio::after {
@@ -738,7 +740,6 @@ body {
   height: 4px;
   background: #2196F3;
   border-radius: 2px;
-  margin-top: 28px;
 }
 
 .header-main-link {
@@ -796,6 +797,9 @@ body {
 @media screen and (max-width: 767px) {
   .header {
     max-width: 480px;
+    height: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     margin: 0 auto;
   }
   .menu-btn {
@@ -871,6 +875,8 @@ body {
 @media screen and (min-width: 768px) {
   .header {
     max-width: 768px;
+    height: 80px;
+    padding-top: 26px;
     margin: 0 auto;
   }
   .logo {
@@ -890,6 +896,7 @@ body {
   }
   .navigation-list {
     display: flex;
+    justify-content: center;
   }
   .navigation-list-item:not(:last-child) {
     margin-right: 50px;
@@ -936,6 +943,8 @@ body {
 @media screen and (min-width: 1200px) {
   .header {
     max-width: 1200px;
+    height: 80px;
+    padding-top: 24px;
     margin: 0 auto;
   }
   .logo {
@@ -978,7 +987,6 @@ body {
 
 /* HERO секция */
 .hero {
-  max-width: 480px;
   height: 400px;
   margin: 0 auto;
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero-mobile.jpg);
