@@ -2,14 +2,3 @@
     margin-bottom: 94px;
 }
 
-.link-after-portfolio::after{
-    display: block;
-    content: "";
-
-    width: 77px;
-    height: 4px;
-    background: $acent-color;
-    border-radius: 2px;
-
-    margin-top: 28px;
-}

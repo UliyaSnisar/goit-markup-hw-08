@@ -41,6 +41,30 @@
     }
 }
 
+.link-after-studio::after{
+    display: block;
+    content: "";
+
+    width: 47px;
+    height: 4px;
+    background: $acent-color;
+    border-radius: 2px;
+
+    margin-top: 28px;
+}
+
+.link-after-portfolio::after{
+    display: block;
+    content: "";
+
+    width: 77px;
+    height: 4px;
+    background: $acent-color;
+    border-radius: 2px;
+
+    margin-top: 28px;
+}
+
 .header-main-link{
     font-weight: 500;
     font-size: 18px;
@@ -145,6 +169,7 @@
         left: 0;
         width: 100%;
         height: 453px;
+        z-index: 100;
     
         display: flex;
         flex-direction: column;
@@ -169,6 +194,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         width: 99px;
     }
 
