@@ -25,6 +25,7 @@
 
 .navigation-list-item-link{
     position: relative;
+    display: block;    
     font-weight: 500;
     font-size: 18px;
     line-height: 1.17;
@@ -42,30 +43,17 @@
     }
 }
 
-.link-after-studio::after{
+.link-after::after{
     position: absolute;
     bottom: 0;
     display: block;
     content: "";
 
-    width: 47px;
+    width: 47;
     height: 4px;
     background: $acent-color;
     border-radius: 2px;
 }
-
-.link-after-portfolio::after{
-    position: absolute;
-    bottom: 0;
-    display: block;
-    content: "";
-
-    width: 77px;
-    height: 4px;
-    background: $acent-color;
-    border-radius: 2px;
-}
-
 
 .header-main-link{
     font-weight: 500;
@@ -130,9 +118,6 @@
 @media screen and (max-width: 767px) {
     .header{
         max-width: 480px;
-        height: 60px;
-        padding-top: 16px;
-        padding-bottom: 16px;
         margin: 0 auto;
     }
 
@@ -228,8 +213,6 @@
 @media screen and (min-width: 768px){
     .header{
         max-width: 768px;
-        height: 80px;
-        padding-top: 26px;
         margin: 0 auto;
     }
 
@@ -310,8 +293,6 @@
 @media screen and (min-width: 1200px){
     .header{
         max-width: 1200px;
-        height: 80px;
-        padding-top: 24px;
         margin: 0 auto;
     }
 
@@ -355,7 +336,6 @@
         height: 16px;
         }
     
-
     .header-address-main-link,
     .header-address-main-tel{
         display: flex;
