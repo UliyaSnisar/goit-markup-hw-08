@@ -334,6 +334,16 @@ body {
     background: #2196F3;
     border-radius: 2px;
   }
+  .link-after-portfolio::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 77px;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+  }
   .address-menu {
     display: flex;
     flex-direction: column;
@@ -370,7 +380,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .header {
-    max-width: 1200px;
+    min-width: 1200px;
     margin: 0 auto;
   }
   .header .container {
