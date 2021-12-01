@@ -301,6 +301,11 @@
   .header {
     max-width: 1200px;
     margin: 0 auto;
+
+    .container {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
   }
 
   .logo {
@@ -310,10 +315,6 @@
   .link-after::after {
     width: 48px;
   }
-
-  //   .header-address {
-  //     margin-left: 305px;
-  //   }
 
   .address-menu {
     display: flex;

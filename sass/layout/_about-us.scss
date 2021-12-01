@@ -95,6 +95,14 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .abot-us {
+    width: 1170px;
+    padding: 60px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
   .description-list {
     display: flex;
     justify-content: space-between;
